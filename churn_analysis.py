@@ -257,8 +257,8 @@ def print_business_insights(df: pd.DataFrame) -> None:
     low    = df[df["tenure"] <= q1]["Churn"].mean()
     high   = df[df["tenure"] >= q3]["Churn"].mean()
     print(f"\nChurn by tenure:")
-    print(f"  Low tenure  (≤{q1:.0f} mo) : {low:.1%}")
-    print(f"  High tenure (≥{q3:.0f} mo) : {high:.1%}")
+    print(f"  Low tenure  (<={q1:.0f} mo) : {low:.1%}")
+    print(f"  High tenure (>={q3:.0f} mo) : {high:.1%}")
 
 
 # ── 6. Main pipeline ───────────────────────────────────────────────────────────
