@@ -15,9 +15,6 @@ env/
 .ipynb_checkpoints/
 
 # Output / artifacts
-outputs/
-*.png
-*.svg
 models/
 
 # OS
